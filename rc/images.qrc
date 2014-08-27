@@ -1,0 +1,13 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>images/dev_vsb.svg</file>
+     <file>images/dev_none.svg</file>
+     <file>images/mode_joystick.svg</file>
+     <file>images/mode_keyseq.svg</file>
+     <file>images/mode_singlekey.svg</file>
+     <file>images/app_icon.svg</file>
+     <file>images/go.svg</file>
+     <file>images/reset.svg</file>
+     <file>images/choose.svg</file>
+ </qresource>
+ </RCC>
