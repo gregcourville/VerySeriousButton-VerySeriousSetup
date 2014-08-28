@@ -1,4 +1,19 @@
-//TODO: Fix order of definitions
+// © 2014 Greg Courville <Greg_Courville@GregLabs.com>
+// 
+// This file is part of VerySeriousSetup.
+// 
+// VerySeriousSetup is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// VerySeriousSetup is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License
+// along with VerySeriousSetup.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <string>
 #include <stdint.h>
@@ -7,8 +22,6 @@
 #include <boost/concept_check.hpp>
 #include "vsbprog.h"
 #include "hidapi.h"
-
-#include <iostream> //DEBUG
 
 #define MAX_REPORT_LEN 256
 #define VSB_REPORTID 3
@@ -30,6 +43,8 @@
 #define VSB_RESP_BADIDX 0x18
 #define VSB_RESP_BUSY 0x80
 #define NUM_READ_TRIES 16
+
+//TODO: Re-order definitions (so that they match the header) to make maintenance easier
 
 HidDeviceInfo::HidDeviceInfo(uint16_t vendorId, uint16_t productId,
                              uint16_t usagePage, uint16_t usage,
