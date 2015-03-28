@@ -231,8 +231,8 @@ void VssMainWindow::setAllControlsLocked(bool y)
     else
     {
         deviceSelector->setEnabled(true);
-        modeSelector->setEnabled(selectedDevice);
-        bigGoButton->setEnabled(selectedDevice);
+        modeSelector->setEnabled(!!selectedDevice);
+        bigGoButton->setEnabled(!!selectedDevice);
         menuBar()->setEnabled(true);
     }
 }
